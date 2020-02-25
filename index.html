@@ -5,11 +5,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servitas :: Cloud-based Facility Management</title>
+
+    <link rel='icon' href='favicon.png' type='image/x-icon'>
     <link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
     <link href="Content/bootstrap.min.css" rel="stylesheet"/>
-<link href="Content/starter-template.css" rel="stylesheet"/>
-<link href="Content/docs.min.css" rel="stylesheet"/>
+    <link href="Content/starter-template.css" rel="stylesheet"/>
+    <link href="Content/docs.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet">
     <link href="Content/fontawesome/css/all.css" rel="stylesheet" />
@@ -75,10 +78,10 @@
                 <h3 class="tLeft">Facility Manager</h3>
                 <h5 class="tRight col-md-7">Landed property sales, rents, clients, complaints, expenses, debts, service charges and reminders.</h5>
                 <p class="nBrand">30-day free trial <img src="img/checkmark2.png" class="img-fluid" /></p>
-                <a href="/Home/Pricing" class="btn btn-light btn-lg"><i class="fas fa-user"></i> Pricing And Plans</a>
+                <a href="/Home/Pricing" class="btn btn-light btn-lg"><i class="fas fa-tags"></i> Plans and Pricing</a>
             </div>
-            <img src="img/limg.png" class="jumboImage" />
-            <img src="img/limg2.png" class="jumboImage2" />
+            <img src="img/limg.png" class="jumboImage" data-aos="fade-in" data-aos-duration="500" />
+            <img src="img/limg2.png" class="jumboImage2" data-aos="fade-in" data-aos-duration="1000"  />
         </section>
     </div>
 
@@ -86,14 +89,14 @@
 <br /><br /><br />
 <div class="minTitb">
     <div class="row justify-content-center">
-        <div class="col-md-5">
+        <div class="col-lg-5 d-none d-lg-block">
             <div>
                 <h3 class="text-center"><img src="img/house.png" class="img-fluid" /></h3>
             </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-lg-7">
             <div class="spPadding text-left">
-                <a class="nBrand mt-5">Organize your work</a><br /><br />
+                <a class="nBrand mt-5"><img src="img/house.png" class="section-img d-inline d-lg-none" /> Organize your work</a><br /><br />
                 <p class="whitText">Manage real estate facilities in your care and  its related information. <br /><br /> Real estate properties for sales such as lands, houses, halls, estates etc, real estate facilities for management such as rented or serviced apartments, offices, buildings, condos etc and the clients that buy or rent these properties and facilities.
 
                 <br /><br />The real estate items are categorized into:</p>
@@ -110,9 +113,9 @@
 </div>
 <div class="minTitb">
     <div class="row justify-content-center">
-        <div class="col-md-6">
+        <div class="col-lg-7">
             <div class="spPadding text-left">
-                <a class="nBrand mt-5">Be More Productive</a><br /><br />
+                <a class="nBrand mt-5"><img src="img/worker.png" class="img-fluid section-img d-inline d-lg-none" /> Be More Productive</a><br /><br />
                 <p class="whitText">The cloud-based facility manager influences productivity by making you manage a variety of components associated with real estate facilities and objects such as:</p>
 
                 <ol class="whitText">
@@ -127,7 +130,7 @@
                 <p class="whitText">The system helps you understand within the palm of your hands the extent of your operations and all the details involved.</p>
             </div>
         </div>
-        <div class="col-md-5">
+        <div class="col-lg-5 d-none d-lg-block">
             <div>
                 <h3 class="text-center"><img src="img/worker.png" class="img-fluid" /></h3>
             </div>
@@ -136,14 +139,14 @@
 </div>
 <div class="minTitb">
     <div class="row justify-content-center">
-        <div class="col-md-5">
+        <div class="col-lg-5 d-none d-lg-block">
             <div>
                 <h3 class="text-center"><img src="img/datar.png" class="img-fluid" /></h3>
             </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-lg-7">
             <div class="spPadding text-left">
-                <a class="nBrand">Keep accurate data</a><br /><br />
+                <a class="nBrand"><img src="img/datar.png" class="img-fluid section-img d-inline d-lg-none" /> Keep accurate data</a><br /><br />
                 <p class="whitText">Keep consistent and accurate data and reports with the cloud-based facility manager. It helps you at a glance understand the financial standing of your operations which consists of:</p>
 
                 <ol class="whitText">
@@ -163,39 +166,32 @@
 <br /><br /><br /><br />
 <div class="footerd">
     <br />
-    <div class="row justify-content-center no-gutters">
-        <div class="col-md-2 text-md-left text-center">
-            <p>Corporate</p>
-            <p><small><a href="#">About Scheme</a><br /><a href="#">Privacy Policy</a><br /><a href="#">Terms & Conditions</a><br /><a href="#">Contact Us</a><br /></small></p>
+    <div class="container">
+        <div class="row no-gutters mb-5">
+            <a class="navbar-brand" href="./"><img src="img/lg3.png" /></a>
         </div>
-        <div class="col-md-2 text-md-left text-center">
-            <p>Corporate</p>
-            <p><small><a href="#">About Scheme</a><br /><a href="#">Privacy Policy</a><br /><a href="#">Terms & Conditions</a><br /><a href="#">Contact Us</a><br /></small></p>
+        <div class="row no-gutters footer-content">
+            <div class="col-md-4 text-left">
+                <h5 class="mb-3">Company</h5>
+                <p><small><a href="#">About Scheme</a><br /><a href="#">Privacy Policy</a><br /><a href="#">Terms & Conditions</a><br /></small></p>
+            </div>
+            <div class="col-md-4 text-left">
+                <h5 class="mb-3">Resources</h5>
+                <p><small><a href="#">Plans and Pricing</a><br /><a href="#">Contact</a><br /><a href="#">Reports</a><br /></small></p>
+            </div>
+            <div class="col-md-4 text-left">
+                <h5 class="mb-3">Product Help</h5>
+                <p><small><a href="#">Documentation</a><br /><a href="#">Support</a><br /></small></p>
+            </div>
         </div>
-        <div class="col-md-2 text-md-left text-center">
-            <p>Popular</p>
-            <p><small><a href="#">Documentation</a><br /><a href="#">Plans And Pricing</a><br /><a href="#">Customer Support</a><br /><a href="#">Reports</a><br /></small></p>
-        </div>
-    </div>
-    <div class="row justify-content-center no-gutters">
-        <div class="col-md-2 text-md-left text-center">
-            <p>Corporate</p>
-            <p><small><a href="#">About Scheme</a><br /><a href="#">Privacy Policy</a><br /><a href="#">Terms & Conditions</a><br /><a href="#">Contact Us</a><br /></small></p>
-        </div>
-        <div class="col-md-2 text-md-left text-center">
-            <p>Corporate</p>
-            <p><small><a href="#">About Scheme</a><br /><a href="#">Privacy Policy</a><br /><a href="#">Terms & Conditions</a><br /><a href="#">Contact Us</a><br /></small></p>
-        </div>
-        <div class="col-md-2 text-md-left text-center">
-            <p>Popular</p>
-            <p><small><a href="#">Documentation</a><br /><a href="#">Plans And Pricing</a><br /><a href="#">Customer Support</a><br /><a href="#">Reports</a><br /></small></p>
+        
+        <div class="row no-gutters">
+            <div class="col-12 copyright">
+                <p>&copy; 2020 Agent53 - All rights reserved.</p>
+            </div>
         </div>
     </div>
-    <div style="width: 300px;" class="row justify-content-center no-gutters">
-        <div class="col-md-12">
-            <p class="text-center"></p>
-        </div>
-    </div>
+    
 </div>
     </main>
 
@@ -205,6 +201,11 @@
     <script src="Scripts/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
     <script src="Scripts/docs.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
     
 </body>
 </html>

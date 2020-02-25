@@ -107,6 +107,32 @@ svg circle {
     border-radius: 0rem;
 }
 
+.col-lg-7 .section-img {
+  width: 60px;
+  height: 62px;
+  display: inline-block;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
+
+.footerd {
+  overflow-x: hidden;
+}
+
+.footerd .footer-content {
+  padding-left: 22px;
+}
+
+.footerd .copyright {
+  margin: 22px;
+  margin-bottom: 0;
+}
+
+.footerd .copyright p{
+  border-top: 1px solid #ccc;
+}
+
 @media (max-width: 500px) {
     .dBg {
     background: #e9eef3;
@@ -151,6 +177,7 @@ svg circle {
 
 @media (min-width: 768px) {
     .tLeft {font-size: 70px; font-weight: bolder; line-height: 80px; color: #4e4848;}
+
 }
 
 @media (max-width: 1225px) {
@@ -200,7 +227,7 @@ svg circle {
 
 .minTita {padding: 33px 0px 10px 0px;}
 .spPadding {padding: 43px 80px 40px 80px;}
-.minTitb {background: #fafafa; overflow-x: hidden;}
+.minTitb {background: #fff; overflow-x: hidden;}
 .whitText {font-weight: 100; font-size: 22px;}
  .minTitb h2, .minTitb h3, .minTitb h4 {font-family: Calibri; font-weight: 100; color: #212529; font-size: 22px;}
 
@@ -219,7 +246,7 @@ svg circle {
 
  .minTitbba h1 { font-weight: bolder; color: #2f5072; font-size: 52px;}
 
-.minTitbb {background: #fafafa; border-top:1px #ededed solid; border-bottom:1px #ededed solid; padding: 105px 30px 125px 30px;}
+.minTitbb {background: #fff; border-top:1px #ededed solid; border-bottom:1px #ededed solid; padding: 105px 30px 125px 30px;}
 .minTitbb h1, .minTitbb h2, .minTitbb h3, .minTitbb h4 {font-family: Calibri; font-weight: 100; color: #212529; font-size: 22px;}
 
 .minTitbc {background: #fff; padding: 65px 30px 0px 30px;}
