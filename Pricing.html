@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servitas :: Cloud-based Facility Management</title>
+    <link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    <link href="Content/bootstrap.min.css" rel="stylesheet"/>
+<link href="Content/starter-template.css" rel="stylesheet"/>
+<link href="Content/docs.min.css" rel="stylesheet"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet">
+    <link href="Content/fontawesome/css/all.css" rel="stylesheet" />
+    <script src="Scripts/modernizr-2.6.2.js"></script>
+
+
+</head>
+<body class="subscription">
+        <div class="container">
+            
+
+
+
+<div class="container pt-3">
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <div class="pricing-header px-3 py-3 pt-md-5 pb-md-3 mx-auto text-center">
+                <h2>Pricing</h2>
+                <p class="lead">Extra SMS Reminders and property Units can be purchased and added to your subscription anytime if your subscription is not meeting needs at anytime and a subscription upgrade is not an option for you.</p>
+            </div>
+
+            <div class="custom-control custom-checkbox mb-4 text-center">
+                <input type="checkbox" name="selectFreeSub" class="custom-control-input" id="selectFreeSub">
+                <label class="custom-control-label" for="selectFreeSub">30-Day Free Trial</label>
+            </div>
+
+            <div class="card-deck mb-1 text-center">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-normal">Basic</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">₦6K <small class="text-muted">/ mo</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>100 property units</li>
+                            <li>100 SMS Reminders</li>
+                            <li>Unlimited Email Reminders</li>
+                            <li>Help center access</li>
+                        </ul>
+                        <a href="/Home/EnterDetails?subType=Basic" class="btn btn-lg btn-block btn-outline-light setSubscribe">Subscribe</a>
+                    </div>
+                </div>
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-normal">Professional</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">₦9.5K <small class="text-muted">/ mo</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>500 property units</li>
+                            <li>500 SMS Reminders</li>
+                            <li>Unlimited Email Reminders</li>
+                            <li>Help center access</li>
+                        </ul>
+                        <a href="/Home/EnterDetails?subType=Professional" class="btn btn-lg btn-block btn-outline-light setSubscribe">Subscribe</a>
+                    </div>
+                </div>
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-normal">Enterprise</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">₦15K <small class="text-muted">/ mo</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Unlimited property units</li>
+                            <li>2000 SMS Reminders</li>
+                            <li>Unlimited Email Reminders</li>
+                            <li>Help center access</li>
+                        </ul>
+                        <a href="/Home/EnterDetails?subType=Enterprise" class="btn btn-lg btn-block btn-outline-light setSubscribe">Subscribe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+            <div class="mastfoot">
+                <div class="inner">
+                    <p class="text-center">&copy; Jimetro LLC</p>
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="Scripts/jquery-slim.min.js"><\/script>')</script>
+    <script src="Scripts/popper.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+    <script src="Scripts/docs.min.js"></script>
+    
+    <script type="text/javascript" src="Scripts/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="Scripts/datatables/manager/cdb5.js"></script>
+    <script>
+    $(function () {
+        var setFreeSub = false;
+
+        $(".setSubscribe").click(function (event) {
+            event.preventDefault();
+
+            var getURL = $(this).attr("href");
+            getURL += "&setFreeSub=" + setFreeSub;
+
+            window.location.href = getURL;
+
+        });
+
+
+        $('input[name="selectFreeSub"]').click(function (e) {
+            if (this.checked) {
+
+                setFreeSub = true;
+
+            } else {
+                setFreeSub = false;
+            }
+
+        });
+
+    });
+    </script>
+
+</body>
+</html>
