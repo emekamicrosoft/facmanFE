@@ -5,11 +5,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servitas :: Cloud-based Facility Management</title>
+
+    <link rel='icon' href='favicon.png' type='image/x-icon'>
     <link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
     <link href="Content/bootstrap.min.css" rel="stylesheet"/>
-<link href="Content/starter-template.css" rel="stylesheet"/>
-<link href="Content/docs.min.css" rel="stylesheet"/>
+    <link href="Content/starter-template.css" rel="stylesheet"/>
+    <link href="Content/docs.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet">
     <link href="Content/fontawesome/css/all.css" rel="stylesheet" />
@@ -17,87 +20,142 @@
 
 
 </head>
-<body class="subscription">
-        <div class="container">
-            
+<body>
+    <div class="dBg" id="top">
+        <nav class="navbar navbar-expand-md navbar-light" id="navChange">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="img/lg3.png" /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-
-
-<div class="container pt-3">
-    <div class="row justify-content-center">
-        <div class="col-md-10">
-            <div class="pricing-header px-3 py-3 pt-md-5 pb-md-3 mx-auto text-center">
-                <h2>Pricing</h2>
-                <p class="lead">Extra SMS Reminders and property Units can be purchased and added to your subscription anytime if your subscription is not meeting needs at anytime and a subscription upgrade is not an option for you.</p>
-            </div>
-
-            <div class="custom-control custom-checkbox mb-4 text-center">
-                <input type="checkbox" name="selectFreeSub" class="custom-control-input" id="selectFreeSub">
-                <label class="custom-control-label" for="selectFreeSub">30-Day Free Trial</label>
-            </div>
-
-            <div class="card-deck mb-1 text-center">
-                <div class="card mb-4 shadow-sm">
-                    <div class="card-header">
-                        <h4 class="my-0 font-weight-normal">Basic</h4>
-                    </div>
-                    <div class="card-body">
-                        <h1 class="card-title pricing-card-title">₦6K <small class="text-muted">/ mo</small></h1>
-                        <ul class="list-unstyled mt-3 mb-4">
-                            <li>100 property units</li>
-                            <li>100 SMS Reminders</li>
-                            <li>Unlimited Email Reminders</li>
-                            <li>Help center access</li>
-                        </ul>
-                        <a href="/Home/EnterDetails?subType=Basic" class="btn btn-lg btn-block btn-outline-light setSubscribe">Subscribe</a>
-                    </div>
-                </div>
-                <div class="card mb-4 shadow-sm">
-                    <div class="card-header">
-                        <h4 class="my-0 font-weight-normal">Professional</h4>
-                    </div>
-                    <div class="card-body">
-                        <h1 class="card-title pricing-card-title">₦9.5K <small class="text-muted">/ mo</small></h1>
-                        <ul class="list-unstyled mt-3 mb-4">
-                            <li>500 property units</li>
-                            <li>500 SMS Reminders</li>
-                            <li>Unlimited Email Reminders</li>
-                            <li>Help center access</li>
-                        </ul>
-                        <a href="/Home/EnterDetails?subType=Professional" class="btn btn-lg btn-block btn-outline-light setSubscribe">Subscribe</a>
-                    </div>
-                </div>
-                <div class="card mb-4 shadow-sm">
-                    <div class="card-header">
-                        <h4 class="my-0 font-weight-normal">Enterprise</h4>
-                    </div>
-                    <div class="card-body">
-                        <h1 class="card-title pricing-card-title">₦15K <small class="text-muted">/ mo</small></h1>
-                        <ul class="list-unstyled mt-3 mb-4">
-                            <li>Unlimited property units</li>
-                            <li>2000 SMS Reminders</li>
-                            <li>Unlimited Email Reminders</li>
-                            <li>Help center access</li>
-                        </ul>
-                        <a href="/Home/EnterDetails?subType=Enterprise" class="btn btn-lg btn-block btn-outline-light setSubscribe">Subscribe</a>
-                    </div>
+                <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                    <ul class="navbar-nav text-center ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="privacy.html"> Privacy Policy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="terms.html"> Terms</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> <i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> <i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> <i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> <i class="fab fa-youtube"></i></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
+        </nav>
+        <div class="container header text-center">
+            <h1>Plans and Privacy</h1>
         </div>
     </div>
-</div>
 
-
-
-            <div class="mastfoot">
-                <div class="inner">
-                    <p class="text-center">&copy; Jimetro LLC</p>
+    <main role="main">
+        <br /><br />
+        <div class="minTitb">
+            <div class="container">
+                    <div class="row justify-content-center">
+                            <div class="col-md-12">
+                                    <div class="pricing-header mx-auto text-center">
+                                        <p class="lead">Extra SMS Reminders and property Units can be purchased and added to your subscription anytime if your subscription is not meeting needs at anytime and a subscription upgrade is not an option for you.</p>
+                                    </div>
+                        
+                                    <div class="custom-control custom-checkbox mb-4 text-center">
+                                        <input type="checkbox" name="selectFreeSub" class="custom-control-input" id="selectFreeSub">
+                                        <label class="custom-control-label" for="selectFreeSub">30-Day Free Trial</label>
+                                    </div>
+                        
+                                    <div class="card-deck mb-1 text-center">
+                                        <div class="card mb-4 shadow-sm">
+                                            <div class="card-header">
+                                                <h4 class="my-0 font-weight-normal">Basic</h4>
+                                            </div>
+                                            <div class="card-body">
+                                                <h1 class="card-title pricing-card-title">₦6K <small class="text-muted">/ mo</small></h1>
+                                                <ul class="list-unstyled mt-3 mb-4">
+                                                    <li>100 property units</li>
+                                                    <li>100 SMS Reminders</li>
+                                                    <li>Unlimited Email Reminders</li>
+                                                    <li>Help center access</li>
+                                                </ul>
+                                                <a href="/Home/EnterDetails?subType=Basic" class="btn btn-lg btn-block btn-outline-dark setSubscribe">Subscribe</a>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-4 shadow-sm">
+                                            <div class="card-header">
+                                                <h4 class="my-0 font-weight-normal">Professional</h4>
+                                            </div>
+                                            <div class="card-body">
+                                                <h1 class="card-title pricing-card-title">₦9.5K <small class="text-muted">/ mo</small></h1>
+                                                <ul class="list-unstyled mt-3 mb-4">
+                                                    <li>500 property units</li>
+                                                    <li>500 SMS Reminders</li>
+                                                    <li>Unlimited Email Reminders</li>
+                                                    <li>Help center access</li>
+                                                </ul>
+                                                <a href="/Home/EnterDetails?subType=Professional" class="btn btn-lg btn-block btn-outline-dark setSubscribe">Subscribe</a>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-4 shadow-sm">
+                                            <div class="card-header">
+                                                <h4 class="my-0 font-weight-normal">Enterprise</h4>
+                                            </div>
+                                            <div class="card-body">
+                                                <h1 class="card-title pricing-card-title">₦15K <small class="text-muted">/ mo</small></h1>
+                                                <ul class="list-unstyled mt-3 mb-4">
+                                                    <li>Unlimited property units</li>
+                                                    <li>2000 SMS Reminders</li>
+                                                    <li>Unlimited Email Reminders</li>
+                                                    <li>Help center access</li>
+                                                </ul>
+                                                <a href="/Home/EnterDetails?subType=Enterprise" class="btn btn-lg btn-block btn-outline-dark setSubscribe">Subscribe</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+            </div>
+            
+        </div>
+        <br /><br />
+        <div class="footerd">
+            <br />
+            <div class="container">
+                <div class="row no-gutters mb-5">
+                    <a class="navbar-brand" href="index.html"><img src="img/lg3.png" /></a>
                 </div>
-                <div>
-
+                <div class="row no-gutters footer-content">
+                    <div class="col-md-4 text-left">
+                        <h5 class="mb-3">Company</h5>
+                        <p><small><a href="about.html">About Scheme</a><br /><a href="privacy.html">Privacy Policy</a><br /><a href="terms.html">Terms & Conditions</a><br /></small></p>
+                    </div>
+                    <div class="col-md-4 text-left">
+                        <h5 class="mb-3">Resources</h5>
+                        <p><small><a href="#top">Plans and Pricing</a><br /><a href="#">Contact</a><br /><a href="#">Reports</a><br /></small></p>
+                    </div>
+                    <div class="col-md-4 text-left">
+                        <h5 class="mb-3">Product Help</h5>
+                        <p><small><a href="#">Documentation</a><br /><a href="#">Support</a><br /></small></p>
+                    </div>
+                </div>
+                
+                <div class="row no-gutters">
+                    <div class="col-12 copyright">
+                        <p>&copy; 2020 Agent53 - All rights reserved.</p>
+                    </div>
                 </div>
             </div>
+            
         </div>
+    </main>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="Scripts/jquery-slim.min.js"><\/script>')</script>
@@ -105,37 +163,11 @@
     <script src="Scripts/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
     <script src="Scripts/docs.min.js"></script>
-    
-    <script type="text/javascript" src="Scripts/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="Scripts/datatables/manager/cdb5.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
     <script>
-    $(function () {
-        var setFreeSub = false;
-
-        $(".setSubscribe").click(function (event) {
-            event.preventDefault();
-
-            var getURL = $(this).attr("href");
-            getURL += "&setFreeSub=" + setFreeSub;
-
-            window.location.href = getURL;
-
-        });
-
-
-        $('input[name="selectFreeSub"]').click(function (e) {
-            if (this.checked) {
-
-                setFreeSub = true;
-
-            } else {
-                setFreeSub = false;
-            }
-
-        });
-
-    });
+      AOS.init();
     </script>
-
+    
 </body>
 </html>
