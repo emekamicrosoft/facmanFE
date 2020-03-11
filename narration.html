@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent53 - Cloud-based Facility Management</title>
+
+    <link rel='icon' href='favicon.png' type='image/x-icon'>
+    <link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    <link href="Content/bootstrap.min.css" rel="stylesheet"/>
+    <link href="Content/starter-template.css" rel="stylesheet"/>
+    <link href="Content/docs.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet">
+    <link href="Content/fontawesome/css/all.css" rel="stylesheet" />
+    <script src="Scripts/modernizr-2.6.2.js"></script>
+
+
+</head>
+<body>
+    <div class="dBg" id="top">
+        <nav class="navbar navbar-expand-md navbar-light" id="navChange">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="img/lg3.png" /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                    <ul class="navbar-nav text-center ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="privacy.html"> Privacy Policy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="terms.html"> Terms</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> <i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> <i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> <i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> <i class="fab fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container header text-center">
+            <h1>Documentation</h1>
+        </div>
+    </div>
+
+    <main role="main">
+        <div class="minTitb">
+            <div class="container-fluid">
+                <div class="row flex-xl-nowrap">
+                  <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
+                      <!--
+                        <form class="bd-search d-flex align-items-center">
+                            <span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;"><input type="search" class="form-control ds-input" id="search-input" placeholder="Search..." autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: normal; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="ds-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-0" style="position: absolute; top: 100%; z-index: 100; display: none; left: 0px; right: auto;"><div class="ds-dataset-1"></div></span></span>
+                                <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path></svg>
+                                </button>
+                        </form>
+                      -->
+          
+                    <nav class="bd-links collapse" id="bd-docs-nav">
+                        <div class="bd-toc-item active">
+                    
+                            <ul class="nav bd-sidenav">
+                                <li><a href="documentation.html">Introduction</a></li>
+                                <li class="active"><a href="#">Narrations</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+          
+                  </div>
+                  <div class="d-none d-xl-block col-xl-2 bd-toc">
+                        <ul class="section-nav">
+                            <li class="toc-entry toc-h2"><a href="#narrations">Narrations</a></li>
+                                <ul>
+                                <li class="toc-entry toc-h3"><a href="#zones">Zones</a></li>
+                                <li class="toc-entry toc-h3"><a href="#blocks">Blocks</a></li>
+                                <li class="toc-entry toc-h3"><a href="#units">Units</a></li>
+                                </ul>
+                            <li class="toc-entry toc-h2"><a href="#operations">Operations</a></li>
+                                <ul>
+                                <li class="toc-entry toc-h3"><a href="#clients">Clients</a></li>
+                                <li class="toc-entry toc-h3"><a href="#allocations">Allocations</a></li>
+                                <li class="toc-entry toc-h3"><a href="#fees">Fees</a></li>
+                                <li class="toc-entry toc-h3"><a href="#reminders">Reminders</a></li>
+                                </ul>
+
+                            <li class="toc-entry toc-h2"><a href="#revenue">Revenue</a></li>
+                                <ul>
+                                <li class="toc-entry toc-h3"><a href="#payments">Payments</a></li>
+                                <li class="toc-entry toc-h3"><a href="#invoices">Invoices</a></li>
+                                </ul>
+                        </ul>
+                    </div>
+                  <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
+                    <p class="nBrand mt-4" id="narrations"><b>Narrations</b></p>
+                    <p class="bd-text">This system is built on the concept of three items: Zones, Blocks and Units.</p>
+                        <br />
+                    <p class="bd-lead" id="zones"><b>1.1 Zones</b></p>
+                    
+                    <p class="bd-text">A Zone is like a state, a local government, a city area, an estate, in fact a sort of multi-container. What becomes a zone completely lies at the discretion of the facility manager. He understands how his property objects are laid out.</p>
+                    
+                    <p class="bd-text">For instance, if a facility manager has only one property in a state, like a duplex. He may choose to make that state an entire zone if he/she knows they are not interested in making a major facilities or properties management move.</p>
+                    
+                    <p class="bd-text">To create a new zone you must provide the title of the zone, the state it is contained in, address, the type of zone which can be a state, a city, a city area, a local government area or an estate.</p>
+                    
+                    <p class="bd-text">At all times you can change the name or form of any zone.</p>
+                    
+                    <br />
+
+
+                    <p class="bd-lead" id="blocks"><b>1.2 Blocks</b></p>
+                    <p class="bd-text">A block is like a building inside a zone. Take for instance, an estate which is a zone, and a building inside one of the streets in the estate, this buidling is a block and has an address within the estate, a building in a street that serves as a zone, a building that is inside a city area that serves as a zone (these instances are for facility managers that don't have much properties in a city area that they choose to make an entire city area, city or state a zone).</p>
+                    
+                    <p class="bd-text">To create a new block inside a zone you must provide the title of the block and it's address.</p>
+
+                    <br />
+
+          
+          
+                    <p class="bd-lead" id="units"><b>1.3 Units</b></p>
+                    <p class="bd-text">A unit is the last item which is actually being managed here. Every property or facility being put up by a facility manager must end up being a unit. Whether it's a duplex, a flat, an office apartment, whatever it is, is managed as a unit.</p>
+                    
+                    <p class="bd-text">Take for instance, a property with 6 flats, inside an estate. The estate is the zone, the building is the block and the 6 flats are 6 units. If the building does not have flats but rented on its own alone, the building becomes the unit in this instance. So in an estate which is a zone, the building is a block and a unit at the same time.</p>
+                    
+                    <p class="bd-text">The unit is inside the block and the block is inside the zone. The unit as earlier said, is the basic item being managed.</p>
+                    
+                    <p class="bd-text">An office complex comprising of 6 floors rented to Microsoft Corporation for instance in the highbrow area of Abuja is one unit because it is rented as one and to one client only, this very unit is inside a block which is also the same building and thiss block is inside a zone.</p>
+                    
+                    <p class="bd-text">To create a new unit inside a block you must provide the title of the unit.</p>
+
+                    <br />
+
+                    <p class="nBrand mt-4" id="operations"><b>Operations</b></p>
+                    <p class="bd-text">The pillars on which all operations rely include: Clients, Allocations, Fees and Reminders.</p>
+                        <br />
+                    <p class="bd-lead" id="clients"><b>2.1 Clients</b></p>
+                    
+                    <p class="bd-text">You create your clients on the system. A client can be associated to any number of properties of facilities. You provide on the system basic information of your clients.</p>
+                    
+                    <p class="bd-text">To create a client you will need to provide the first name, last name, email address, phone number, occupation, state of origin, date of birth, permanent home address, next of kin and their phone number.</p>
+                
+                    <br />
+
+
+                    <p class="bd-lead" id="allocations"><b>2.2 Allocations</b></p>
+                    <p class="bd-text">Every property adminstered as a unit is associated to an allocation. This is the process of associating it to an occupant, the type of allocation may take different forms, a purchased allocation for purchased houses, a rented or leased allocation for a rented facility or a leased facility.</p>
+                    
+                    <p class="bd-text">The allocation has a duration or period, for purchased facilities or properties there is no duration or period of allocation. But for rented or leased allocations it renews at the end of the allocated period.</p>
+                    
+                    <p class="bd-text">The system will notify you through email of properties whose allocations are expiring according to your settings. If you set it to one week then the system will notify you of allocations expiring in a week at the beginning of the week. If you specify a month then at the beginning of every month the system will notify of properties expiring in that month.</p>
+                    
+                    <p class="bd-text">To make an allocation you will need to link the allocation to a client, the allocation type(purchased, rented or leased), rent cycle / lease duration of allocation for rented or leased allocations, effective date the allocation starts from, fees associated with the allocation and reminders associated to the set fees.</p>
+                    
+                    <p class="bd-text">You can deallocate an allocation by clicking the DeAllocate button. This will automatically wipe off the client information, the allocation information, all the fee and reminder settings for that allocation, then put it up for fresh re-allocation.</p>
+                    <br />
+          
+          
+                    <p class="bd-lead" id="fees"><b>2.3 Fees</b></p>
+                    <p class="bd-text">You can set any category of fee on an allocation depending on fees that apply to that allocation. Fees that normally apply to rented facilities are rent fees, service charges etc. For purchased properties or facilities service charges or any other type of fee may apply.</p>
+                    
+                    <p class="bd-text">At the creation of any fee, it's duration or time frame is also set. If it's a recurring fee, it means that the fee renews at every point of expiry. An invoice is generated automatically for any fee period or duration. The system keeps generating fee invoices at the end of any fee duration and renews the fee at the same time.</p>
+                    
+                    <p class="bd-text">Fees are attached to allocations at the point of creating that allocation and added also while viewing an allocation. Fees can also be set on the Zone or Block level.</p>
+                    
+                    <p class="bd-text">Assuming you have an estate which is a zone where all blocks and all units inside each block pays a particular service charge of a fixed amount, the right way to go about it instead of setting that service charge one by one for each unit in each block, you set a zone-wide fee which will affect every unit and block in the zone.</p>
+                    
+                    <p class="bd-text">This also goes for blocks. All units inside a block will inherit fees specified in the block level. With this you save time in implementing such a charge for all properties.</p>
+
+                    <br />
+
+
+                    <p class="bd-lead" id="reminders"><b>2.4 Reminders</b></p>
+                    <p class="bd-text">Reminders are set for fees. They come along during fee setup. You can set one or two of the two types of reminders, SMS and Email reminder types. You set a reminder scheme for a particular fee, the scheme consists of the reminder interval relating to the duration or period of collection of the fee.</p>
+                    
+                    <p class="bd-text">For recurrent fees, assuming its a rent collected annually, you can set a reminder to start 4 months before the main due date. This is done by setting the <i>Next Due Date</i> field while setting up the reminder. The <i>Send Every</i> field is set as the time threshold for sending each reminder.</p>
+                    
+                    <p class="bd-text">It can be after x days, x weeks, x months or x years. For instance you can set a reminder to send every 5 days to remind a tenant in a serviced apartment to pay his service charge for the month.</p>
+                    
+                    <p class="bd-text">When a fee is renewed, a reminder starts again after the initial set <i>Next Due Date</i>, the <i>Next Due Date</i> that was set the first time becomes the default starting point for the reminder anytime the fee gets renewed.</p>
+                    
+                    <p class="bd-text">Each reminder, whether Email or SMS contains a summary of your current debt and a URL for payment.</p>
+
+                    <br />
+
+                    <p class="nBrand mt-4" id="revenue"><b>Revenue</b></p>
+                    <p class="bd-text">The revenue is categorized into two: Payments and Invoices.</p>
+                        <br />
+                    <p class="bd-lead" id="payments"><b>3.1 Payments</b></p>
+                    
+                    <p class="bd-text">Reminders contain a summary of your current debt as per the very fee the reminder is working on, it also contains a payment URL. Clicking on the url will take you to an online receipt with full details of invoices with pending payments. You can choose to pay all or part of what you currently owe. Different payment methods are available on the platform.</p>
+                    
+                    <p class="bd-text">The electronic payment channels provided by the platform through the payment reminders make collections with different schemes, you can pay with Interswitch WebPay, that is using your debit card, you can also generate a receipt from the platform and take to the bank and pay with Interswitch PayDirect, this is the bank branch scheme.</p>
+
+                    <p class="bd-text">Then you can also add manually collected payments on the platform. All payments processing attract charges.</p>
+                
+                    <br />
+
+
+                    <p class="bd-lead" id="invoices"><b>3.2 Invoices</b></p>
+                    <p class="bd-text">Invoices segment shows you generated invoices on the system of different categories of fees, paid, partially paid and unpaid and also at a glance presents you the current debt profile. From here you can add payments you collected from clients manually. Electronic payments collected automatically reflect here after payment has been made.</p>
+                    
+                    <br />
+
+                  </main>
+                </div>
+              </div>
+        </div>
+        <br /><br />
+        <div class="footerd">
+            <br />
+            <div class="container">
+                <div class="row no-gutters mb-5">
+                    <a class="navbar-brand" href="index.html"><img src="img/lg3.png" /></a>
+                </div>
+                <div class="row no-gutters footer-content">
+                    <div class="col-md-4 text-left">
+                        <h5 class="mb-3">Company</h5>
+                        <p><small><a href="about.html">About Scheme</a><br /><a href="privacy.html">Privacy Policy</a><br /><a href="terms.html">Terms & Conditions</a><br /></small></p>
+                    </div>
+                    <div class="col-md-4 text-left">
+                        <h5 class="mb-3">Resources</h5>
+                        <p><small><a href="#top">Plans and Pricing</a><br /><a href="#">Contact</a><br /><a href="#">Reports</a><br /></small></p>
+                    </div>
+                    <div class="col-md-4 text-left">
+                        <h5 class="mb-3">Product Help</h5>
+                        <p><small><a href="documentation.html">Documentation</a><br /><a href="#">Support</a><br /></small></p>
+                    </div>
+                </div>
+                
+                <div class="row no-gutters">
+                    <div class="col-12 copyright">
+                        <p>&copy; 2020 Agent53 - All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="Scripts/jquery-slim.min.js"><\/script>')</script>
+    <script src="Scripts/popper.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+    <script src="Scripts/docs.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+    
+    
+</body>
+</html>

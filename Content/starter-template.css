@@ -203,7 +203,7 @@ svg circle {
     .jumboImage2 { display:normal;}
 }
 
-.nBrand {font-weight: 200; font-size: 38px;
+.nBrand {font-weight: 200; font-size: 36px;
     white-space: nowrap;
     text-overflow: ellipsis;}
 
@@ -264,3 +264,29 @@ svg circle {
 .IndsColumn h3 {font-size: 35px; font-family: Calibri; font-weight: 100px;}
 
 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {background: #fff78c;}
+
+
+.bd-sidebar {
+  top: 0 !important;
+}
+
+.bd-toc {
+  top: 0 !important;
+  padding: 0 !important;
+  margin: 0;
+
+}
+
+.section-nav {
+  padding-top: 1rem;
+}
+
+.bd-content {
+ 
+}
+
+.bd-text{
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: lighter;
+}
